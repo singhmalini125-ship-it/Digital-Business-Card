@@ -5,9 +5,8 @@ Save this as `index.html` and push to a GitHub repo (root or gh-pages branch).
 To publish on GitHub Pages: create a repo, push this file as index.html on main branch, then enable Pages in repo settings (Source: main / root). Your site will be at https://<username>.github.io/<repo>/
 
 Customize: change the name, title, headline, photo (replace the data-src or use an image URL), social links, colors.
--->
+--><!doctype html>
 
-<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -55,65 +54,62 @@ Customize: change the name, title, headline, photo (replace the data-src or use 
           <button class="btn small" id="copyBtn">Copy Email</button>
         </div>
       </div>
-    </aside>
+    </aside><section>
+  <header>
+    <h1>Malini Singh <span style="font-weight:500;color:var(--muted);font-size:15px">— Product Designer</span></h1>
+    <p>Designing delightful web & mobile experiences. Focused on UX strategy, prototyping and accessible interfaces.</p>
+  </header>
 
-    <section>
-      <header>
-        <h1>Malini Singh <span style="font-weight:500;color:var(--muted);font-size:15px">— Product Designer</span></h1>
-        <p>Designing delightful web & mobile experiences. Focused on UX strategy, prototyping and accessible interfaces.</p>
-      </header>
+  <div class="roles">
+    <span class="role">UX Design</span>
+    <span class="role">Product</span>
+    <span class="role">Figma</span>
+    <span class="role">Front-end</span>
+  </div>
 
-      <div class="roles">
-        <span class="role">UX Design</span>
-        <span class="role">Product</span>
-        <span class="role">Figma</span>
-        <span class="role">Front-end</span>
+  <div class="links">
+    <a class="btn" href="https://www.example.com" target="_blank" rel="noopener">Portfolio</a>
+    <a class="btn" id="vcardBtn" href="#">Download vCard</a>
+    <a class="btn" href="resume.pdf" target="_blank">Resume (PDF)</a>
+  </div>
+
+  <div style="margin-top:18px">
+    <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+      <div style="min-width:0;flex:1">
+        <strong>About</strong>
+        <p class="meta" style="margin:6px 0 0">I help teams ship cleaner, more accessible products through user research, iterative prototyping and design systems.</p>
       </div>
+    </div>
 
-      <div class="links">
-        <a class="btn" href="https://www.example.com" target="_blank" rel="noopener">Portfolio</a>
-        <a class="btn" id="vcardBtn" href="#">Download vCard</a>
-        <a class="btn" href="resume.pdf" target="_blank">Resume (PDF)</a>
-      </div>
+    <div class="socials" aria-label="social links">
+      <a class="icon-btn" href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub">
+        <!-- GitHub SVG -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.78 3.09 8.84 7.38 10.27.54.1.74-.24.74-.53 0-.26-.01-.95-.01-1.86-3 .65-3.64-1.43-3.64-1.43-.49-1.25-1.19-1.58-1.19-1.58-.97-.67.07-.66.07-.66 1.07.08 1.63 1.1 1.63 1.1.95 1.62 2.5 1.15 3.11.88.1-.69.37-1.15.67-1.42-2.4-.27-4.93-1.2-4.93-5.34 0-1.18.42-2.14 1.11-2.9-.11-.27-.48-1.35.11-2.81 0 0 .91-.29 2.98 1.1.87-.24 1.8-.36 2.73-.36.93 0 1.86.12 2.73.36 2.07-1.39 2.98-1.1 2.98-1.1.59 1.46.22 2.54.11 2.81.69.76 1.11 1.72 1.11 2.9 0 4.15-2.54 5.07-4.96 5.33.38.33.72.98.72 1.98 0 1.43-.01 2.58-.01 2.93 0 .3.2.64.75.53C20 20.44 23.1 16.38 23.1 11.6 23.1 5.33 18.27.5 12 .5z" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="icon-btn" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn">
+        <!-- LinkedIn SVG -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6A2 2 0 010 4.99 2 2 0 012.5 3C3.88 3 4.98 4.12 4.98 5.5zM0 8.99h5V24H0V8.99zM8.5 8.99h4.8v2.05h.07c.67-1.26 2.3-2.59 4.74-2.59C23.2 8.45 24 11.08 24 14.63V24h-5.1v-8.05c0-1.92-.04-4.39-2.68-4.39-2.68 0-3.09 2.1-3.09 4.26V24H8.5V8.99z" fill="currentColor"/>
+        </svg>
+      </a>
+      <a class="icon-btn" href="mailto:hello@example.com" title="Email" id="emailIcon">
+        <!-- Mail SVG -->
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+          <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
+        </svg>
+      </a>
+    </div>
+  </div>
 
-      <div style="margin-top:18px">
-        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">
-          <div style="min-width:0;flex:1">
-            <strong>About</strong>
-            <p class="meta" style="margin:6px 0 0">I help teams ship cleaner, more accessible products through user research, iterative prototyping and design systems.</p>
-          </div>
-        </div>
+  <footer>
+    <div>Want this as a QR? <button class="btn small" id="qrBtn">Generate QR</button></div>
+    <div style="margin-top:8px">Built with ❤️ · <span class="meta">You can host on GitHub Pages</span></div>
+  </footer>
+</section>
 
-        <div class="socials" aria-label="social links">
-          <a class="icon-btn" href="https://github.com/yourusername" target="_blank" rel="noopener" title="GitHub">
-            <!-- GitHub SVG -->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M12 .5C5.73.5.9 5.33.9 11.6c0 4.78 3.09 8.84 7.38 10.27.54.1.74-.24.74-.53 0-.26-.01-.95-.01-1.86-3 .65-3.64-1.43-3.64-1.43-.49-1.25-1.19-1.58-1.19-1.58-.97-.67.07-.66.07-.66 1.07.08 1.63 1.1 1.63 1.1.95 1.62 2.5 1.15 3.11.88.1-.69.37-1.15.67-1.42-2.4-.27-4.93-1.2-4.93-5.34 0-1.18.42-2.14 1.11-2.9-.11-.27-.48-1.35.11-2.81 0 0 .91-.29 2.98 1.1.87-.24 1.8-.36 2.73-.36.93 0 1.86.12 2.73.36 2.07-1.39 2.98-1.1 2.98-1.1.59 1.46.22 2.54.11 2.81.69.76 1.11 1.72 1.11 2.9 0 4.15-2.54 5.07-4.96 5.33.38.33.72.98.72 1.98 0 1.43-.01 2.58-.01 2.93 0 .3.2.64.75.53C20 20.44 23.1 16.38 23.1 11.6 23.1 5.33 18.27.5 12 .5z" fill="currentColor"/>
-            </svg>
-          </a>
-          <a class="icon-btn" href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener" title="LinkedIn">
-            <!-- LinkedIn SVG -->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6A2 2 0 010 4.99 2 2 0 012.5 3C3.88 3 4.98 4.12 4.98 5.5zM0 8.99h5V24H0V8.99zM8.5 8.99h4.8v2.05h.07c.67-1.26 2.3-2.59 4.74-2.59C23.2 8.45 24 11.08 24 14.63V24h-5.1v-8.05c0-1.92-.04-4.39-2.68-4.39-2.68 0-3.09 2.1-3.09 4.26V24H8.5V8.99z" fill="currentColor"/>
-            </svg>
-          </a>
-          <a class="icon-btn" href="mailto:hello@example.com" title="Email" id="emailIcon">
-            <!-- Mail SVG -->
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
-              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" fill="currentColor"/>
-            </svg>
-          </a>
-        </div>
-      </div>
-
-      <footer>
-        <div>Want this as a QR? <button class="btn small" id="qrBtn">Generate QR</button></div>
-        <div style="margin-top:8px">Built with ❤️ · <span class="meta">You can host on GitHub Pages</span></div>
-      </footer>
-    </section>
-  </main>
-
-  <script>
+  </main>  <script>
     // Basic interactivity: copy email, generate vCard & QR
     const email = 'hello@example.com';
     const phone = '+91 12345 67890';
@@ -139,8 +135,7 @@ Customize: change the name, title, headline, photo (replace the data-src or use 
       const w = window.open('', '_blank');
       w.document.write(`<title>QR - Malini Singh</title><img src="${src}" alt="QR code">`);
     });
-  </script>
-</body>
+  </script></body>
 </html>
 
 
